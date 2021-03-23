@@ -10,9 +10,8 @@ let sphereRenderer = sphere.addComponent(GeometryRenderer);
 sphereRenderer.geometry = new CuboidGeometry(engine, 2, 2, 2);
 
 // 创建材质
-let mtl = new BlinnPhongMaterial(engine);
-mtl.emissiveColor = new Color(0.75, 0.25, 0.25, 1);
-mtl.shininess = 100;
+let mtl = new UnlitMaterial(engine);
+mtl.baseColor = new Color(0.75, 0.25, 0.25, 1);
 sphereRenderer.material = mtl;
 ```
 
@@ -24,9 +23,8 @@ let sphereRenderer = sphere.addComponent(GeometryRenderer);
 sphereRenderer.geometry = new SphereGeometry(engine, 3, 32, 32);
 
 // 创建材质
-let mtl = new BlinnPhongMaterial(engine);
-mtl.emissiveColor = new Color(0.75, 0.25, 0.25, 1);
-mtl.shininess = 100;
+let mtl = new UnlitMaterial(engine);
+mtl.baseColor = new Color(0.75, 0.25, 0.25, 1);
 sphereRenderer.material = mtl;
 ```
 
@@ -38,9 +36,8 @@ let sphereRenderer = sphere.addComponent(GeometryRenderer);
 sphereRenderer.geometry = new PlaneGeometry(engine, 3, 3, 32, 32);
 
 // 创建材质
-let mtl = new BlinnPhongMaterial(engine);
-mtl.emissiveColor = new Color(0.75, 0.25, 0.25, 1);
-mtl.shininess = 100;
+let mtl = new UnlitMaterial(engine);
+mtl.baseColor = new Color(0.75, 0.25, 0.25, 1);
 sphereRenderer.material = mtl;
 ```
 
@@ -52,9 +49,8 @@ let sphereRenderer = sphere.addComponent(GeometryRenderer);
 sphereRenderer.geometry = new CircleGeometry(engine, {segments: 100});
 
 // 创建材质
-let mtl = new BlinnPhongMaterial(engine);
-mtl.emissiveColor = new Color(0.75, 0.25, 0.25, 1);
-mtl.shininess = 100;
+let mtl = new UnlitMaterial(engine);
+mtl.baseColor = new Color(0.75, 0.25, 0.25, 1);
 sphereRenderer.material = mtl;
 ```
 
@@ -66,8 +62,7 @@ let sphereRenderer = sphere.addComponent(GeometryRenderer);
 sphereRenderer.geometry = new CylinderGeometry(engine, 2, 3, 5, 32);
 
 // 创建材质
-let mtl = new BlinnPhongMaterial(engine);
-mtl.emissiveColor = new Color(0.75, 0.25, 0.25, 1);
-mtl.shininess = 100;
+let mtl = new UnlitMaterial(engine);
+mtl.baseColor = new Color(0.75, 0.25, 0.25, 1);
 sphereRenderer.material = mtl;
 ```
