@@ -47,7 +47,7 @@ lightEntity.transform.rotation = new Vector3(-45, -45, 0);
 ### 点光源
 
 
-**点光源**存在与空间中的一点，由该点向四面八方发射光线，比如生活中的灯泡就是点光源。点光源有 4 个主要特性：*颜色*（[color](${book.api}classes/core.pointlight.html#color)）、*强度*（[intensity](${book.api}classes/core.pointlight.html#intensity)）、*有效距离*（[distance](${book.api}classes/core.pointlight.html#distance)）、*衰减系数*（[decay](${book.api}classes/core.pointlight.html#decay)）。距离光源超过有效距离的地方将无法接受到电光源的光线，并且离光源越远光照强度也降低，衰减系数控制光照强度降低的速率。
+**点光源**存在于空间中的一点，由该点向四面八方发射光线，比如生活中的灯泡就是点光源。点光源有 4 个主要特性：*颜色*（[color](${book.api}classes/core.pointlight.html#color)）、*强度*（[intensity](${book.api}classes/core.pointlight.html#intensity)）、*有效距离*（[distance](${book.api}classes/core.pointlight.html#distance)）、*衰减系数*（[decay](${book.api}classes/core.pointlight.html#decay)）。距离光源超过有效距离的地方将无法接受到电光源的光线，并且离光源越远光照强度也降低，衰减系数控制光照强度降低的速率。
 
 
 ```typescript
