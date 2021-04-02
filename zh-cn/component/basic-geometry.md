@@ -10,9 +10,8 @@ let sphereRenderer = sphere.addComponent(GeometryRenderer);
 sphereRenderer.geometry = new CuboidGeometry(engine, 2, 2, 2);
 
 // 创建材质
-let mtl = new BlinnPhongMaterial(engine, 'test_mtl2', false);
-mtl.ambient = new Vector4(0.75, 0.25, 0.25, 1);
-mtl.shininess = 100;
+let mtl = new UnlitMaterial(engine);
+mtl.baseColor = new Color(0.75, 0.25, 0.25, 1);
 sphereRenderer.material = mtl;
 ```
 
@@ -24,23 +23,21 @@ let sphereRenderer = sphere.addComponent(GeometryRenderer);
 sphereRenderer.geometry = new SphereGeometry(engine, 3, 32, 32);
 
 // 创建材质
-let mtl = new BlinnPhongMaterial((engine, 'test_mtl2', false);
-mtl.ambient = new Vector4(0.75, 0.25, 0.25, 1);
-mtl.shininess = 100;
+let mtl = new UnlitMaterial(engine);
+mtl.baseColor = new Color(0.75, 0.25, 0.25, 1);
 sphereRenderer.material = mtl;
 ```
 
 - [PlaneGeometry](${book.api}classes/core.planegeometry.html) **平面**
 
 ```typescript
-// 创建材质
-let mtl = new BlinnPhongMaterial(engine, 'test_mtl2', false);
-mtl.ambient = new Vector4(0.75, 0.25, 0.25, 1);
-mtl.shininess = 100;
-
 let sphere = rootEntity.createChild('sphere');
 let sphereRenderer = sphere.addComponent(GeometryRenderer);
 sphereRenderer.geometry = new PlaneGeometry(engine, 3, 3, 32, 32);
+
+// 创建材质
+let mtl = new UnlitMaterial(engine);
+mtl.baseColor = new Color(0.75, 0.25, 0.25, 1);
 sphereRenderer.material = mtl;
 ```
 
@@ -49,12 +46,11 @@ sphereRenderer.material = mtl;
 ```typescript
 let sphere = rootEntity.createChild('sphere');
 let sphereRenderer = sphere.addComponent(GeometryRenderer);
-sphereRenderer.geometry = new CircleGeometry(engine, 3, 3, 3);
+sphereRenderer.geometry = new CircleGeometry(engine, {segments: 100});
 
 // 创建材质
-let mtl = new BlinnPhongMaterial(engine, 'test_mtl2', false);
-mtl.ambient = new Vector4(0.75, 0.25, 0.25, 1);
-mtl.shininess = 100;
+let mtl = new UnlitMaterial(engine);
+mtl.baseColor = new Color(0.75, 0.25, 0.25, 1);
 sphereRenderer.material = mtl;
 ```
 
@@ -66,8 +62,7 @@ let sphereRenderer = sphere.addComponent(GeometryRenderer);
 sphereRenderer.geometry = new CylinderGeometry(engine, 2, 3, 5, 32);
 
 // 创建材质
-let mtl = new BlinnPhongMaterial(engine, 'test_mtl2', false);
-mtl.ambient = new Vector4(0.75, 0.25, 0.25, 1);
-mtl.shininess = 100;
+let mtl = new UnlitMaterial(engine);
+mtl.baseColor = new Color(0.75, 0.25, 0.25, 1);
 sphereRenderer.material = mtl;
 ```
